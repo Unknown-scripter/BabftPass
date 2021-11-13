@@ -1,0 +1,128 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local LOGIN = Instance.new("Frame")
+local Usertext = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local Passtext = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local Pass = Instance.new("TextBox")
+local User = Instance.new("TextBox")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+LOGIN.Name = "LOGIN"
+LOGIN.Parent = ScreenGui
+LOGIN.AnchorPoint = Vector2.new(0.5, 0.5)
+LOGIN.BackgroundColor3 = Color3.fromRGB(51, 51, 51)
+LOGIN.BorderSizePixel = 0
+LOGIN.Position = UDim2.new(0.5, 0, 0.5, 0)
+LOGIN.Size = UDim2.new(0.347922444, 0, 0.269867539, 0)
+
+Usertext.Name = "Usertext"
+Usertext.Parent = LOGIN
+Usertext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Usertext.BackgroundTransparency = 1.000
+Usertext.Position = UDim2.new(0.0318472385, 0, 0.0613496974, 0)
+Usertext.Size = UDim2.new(0.363057375, 0, 0.180981636, 0)
+Usertext.Font = Enum.Font.Highway
+Usertext.Text = "Username"
+Usertext.TextColor3 = Color3.fromRGB(230, 230, 230)
+Usertext.TextScaled = true
+Usertext.TextSize = 14.000
+Usertext.TextWrapped = true
+
+TextLabel.Parent = LOGIN
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.24522303, 0, 0.794478536, 0)
+TextLabel.Size = UDim2.new(0.50796181, 0, 0.141104326, 0)
+TextLabel.Font = Enum.Font.Highway
+TextLabel.Text = "TSNC"
+TextLabel.TextColor3 = Color3.fromRGB(16, 128, 1)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Passtext.Name = "Passtext"
+Passtext.Parent = LOGIN
+Passtext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Passtext.BackgroundTransparency = 1.000
+Passtext.Position = UDim2.new(0.0318472385, 0, 0.487730056, 0)
+Passtext.Size = UDim2.new(0.363057375, 0, 0.180981636, 0)
+Passtext.Font = Enum.Font.Highway
+Passtext.Text = "Username"
+Passtext.TextColor3 = Color3.fromRGB(230, 230, 230)
+Passtext.TextScaled = true
+Passtext.TextSize = 14.000
+Passtext.TextWrapped = true
+
+TextButton.Parent = LOGIN
+TextButton.BackgroundColor3 = Color3.fromRGB(128, 255, 7)
+TextButton.Position = UDim2.new(0.340764344, 0, 0.668711662, 0)
+TextButton.Size = UDim2.new(0.318471342, 0, 0.125766888, 0)
+TextButton.Font = Enum.Font.Highway
+TextButton.Text = "Login!"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+Pass.Name = "Pass"
+Pass.Parent = LOGIN
+Pass.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pass.Position = UDim2.new(0.506369412, 0, 0.5, 0)
+Pass.Size = UDim2.new(0.318471342, 0, 0.15337424, 0)
+Pass.Font = Enum.Font.SciFi
+Pass.Text = ""
+Pass.TextColor3 = Color3.fromRGB(0, 0, 0)
+Pass.TextScaled = true
+Pass.TextSize = 14.000
+Pass.TextWrapped = true
+
+User.Name = "User"
+User.Parent = LOGIN
+User.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+User.Position = UDim2.new(0.506369412, 0, 0.0736196339, 0)
+User.Size = UDim2.new(0.318471342, 0, 0.15337424, 0)
+User.Font = Enum.Font.SciFi
+User.Text = ""
+User.TextColor3 = Color3.fromRGB(0, 0, 0)
+User.TextScaled = true
+User.TextSize = 14.000
+User.TextWrapped = true
+
+-- Scripts:
+
+local function RSBZ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.User.Text == "LolFree" and script.Parent.Parent.Pass.Text == "U_mustsuck" then 
+			wait(0.1)
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Unknown-scripter/BABFT/main/Babft"))()
+            wait()
+            script.Parent.Parent.Parent:Destroy()
+	
+		end
+	end)
+	
+end
+coroutine.wrap(RSBZ_fake_script)()
+local function AQTV_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.User.Text == "1" and script.Parent.Parent.Pass.Text == "2" then 
+			wait(3)
+			script.Parent.Parent.Parent:Destroy()
+			end
+		end)
+end
+coroutine.wrap(AQTV_fake_script)()
